@@ -1,0 +1,29 @@
+
+##
+## string values that begin with '$' will be
+## subsituted with local environment variables
+## of the same name
+##
+
+##
+## default settings, may be
+## overriden in stages
+##
+default:
+    stage: "dev"
+    appInstanceName: "app"
+    instanceFile: "hello-world.js" # relative to the outDir folder in tsconfig.json
+    region: "us-east-1"
+    role: "" # defaults to appName-role
+    functionname: "HelloWorld"
+    accountId: "$AWS_ACCOUNT_ID"
+    ##
+    ## optional, bucket used for resources,
+    ## if set a 'true' the butcket will
+    ## be appname-s3
+    ##
+    # S3BucketName: "XXXXXXXXXXXXX"
+##
+## stage
+##
+# dev:

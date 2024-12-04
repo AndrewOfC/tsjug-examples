@@ -1,0 +1,36 @@
+{
+  "name": "tsjug-hello-world",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Hello World Example",
+  "main": "hello-world.ts",
+  "scripts": {
+    "local": "./node_modules/.bin/tsx localserver.ts",
+    "deploy": "tsx node_modules/@tsjug/cli/cli.ts -y hello-world.yaml",
+    "update": "tsx node_modules/@tsjug/cli/cli.ts -u -y hello-world.yaml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/AndrewOfC/tsjug-examples.git"
+  },
+  "keywords": [
+    "Jug",
+    "aws",
+    "example",
+    "typescript"
+  ],
+  "author": "Andrew E Page",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AndrewOfC/tsjug-examples/issues"
+  },
+  "homepage": "https://github.com/AndrewOfC/tsjug-examples#readme",
+  "dependencies": {
+    "@tsjug/runtime": "^1.0.26",
+    "@types/node": "^22.10.2"
+  },
+  "devDependencies": {
+    "@tsjug/cli": "^1.0.2",
+    "tsx": "^4.19.2"
+  }
+}
