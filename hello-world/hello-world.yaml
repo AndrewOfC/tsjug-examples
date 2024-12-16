@@ -16,7 +16,20 @@ default:
     region: "us-east-1"
     role: "" # defaults to appName-role
     functionname: "HelloWorld"
+    ##
+    ## string values that begin with '$' will be
+    ## subsituted with local environment variables
+    ## of the same name.
+    ##
     accountId: "$AWS_ACCOUNT_ID"
+    credentialsSection: "juguser"
+    ##
+    ## Tags may be a simple string or a key/value pair
+    ## They will be applied to the function, gateway, role and bucket
+    ##
+    tags:
+        - 'unittest'
+        - 'disposable:true'
     ##
     ## optional, bucket used for resources,
     ## if set a 'true' the butcket will

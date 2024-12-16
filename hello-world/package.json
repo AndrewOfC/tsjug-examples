@@ -5,6 +5,7 @@
   "description": "Hello World Example",
   "main": "hello-world.ts",
   "scripts": {
+    "build": "tsc",
     "local": "./node_modules/.bin/tsx localserver.ts",
     "deploy": "tsx node_modules/@tsjug/cli/cli.ts -y hello-world.yaml",
     "update": "tsx node_modules/@tsjug/cli/cli.ts -u -y hello-world.yaml"
@@ -30,7 +31,7 @@
     "@types/node": "^22.10.2"
   },
   "devDependencies": {
-    "@tsjug/cli": "^1.0.2",
+    "@tsjug/cli": "^1.0.3",
     "tsx": "^4.19.2"
   }
 }
