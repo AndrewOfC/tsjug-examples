@@ -22,7 +22,7 @@ default:
     ## of the same name.
     ##
     accountId: "$AWS_ACCOUNT_ID"
-    credentialsSection: "juguser"
+    profile: "juguser"
     ##
     ## Tags may be a simple string or a key/value pair
     ## They will be applied to the function, gateway, role and bucket
